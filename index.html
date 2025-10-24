@@ -8,27 +8,33 @@
 </head>
 <body>
     <div class="container">
-        <h1>World Clock</h1>
-        <select>
-            <option value="Select a city..."></option>
-            <option value=>Quito</option>
-            <option value=>London</option>
-            <option value=>New York</option>
-        </select>
+        <video autoplay muted loop plays-inline class="background-video">
+            <source src="images/sky.mp4" type="video/mp4" />
+        </video>
+        <div class="content">
+            <h1>World Clock</h1>
+            <select>
+                <option value="">Select a city...</option>
+                <option value="">Quito</option>
+                <option value="">London</option>
+                <option value="">New York</option>
+            </select>
 
-        <div class="city">
-            <h2>Los Angeles 🗼</h2>
-            <div class="date"> August, 15th 2025</div>
-            <div class="time">1:48:15</div>
+            <div class="city">
+                <h2>Los Angeles 🗼</h2>
+                <div class="date"> August, 15th 2025</div>
+                <div class="time">1:48:15 <small>AM</small></div>
+            </div>
+            <div class="city">
+                <h2>Sidney 🌆</h2>
+                <div class="date"> August, 15th 2025</div>
+                <div class="time">1:48:15 <small>AM</small></div>
+            </div>
         </div>
-        <div class="city">
-            <h2>Sudney 🌆</h2>
-            <div class="date"> August, 15th 2025</div>
-            <div class="time">1:48:15</div>
-        </div>
+        
     </div>
     
-    <footer>This project was coded with 💕 by Doménica Criollo</a> and is open sourced on <a href="https://github.com/DomeC99/World-clock" target="_blank">Github</a>.</footer>
+    <footer>This project was coded with 💕 by <strong>Doménica Criollo</strong> and is open sourced on <a href="https://github.com/DomeC99/World-clock" target="_blank">Github</a>.</footer>
     <script src="index.js"></script>
 </body>
 </html>
