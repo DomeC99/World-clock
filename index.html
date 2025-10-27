@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>World Clock - Doménica Criollo</title>
     <link rel="stylesheet" href="style.css">
+    <!-- Load Moment.js first -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
+    <!-- Then load Moment Timezone -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.6.0/moment-timezone-with-data-1970-2030.js"></script>
 </head>
 <body>
     <div class="container">
@@ -13,26 +17,26 @@
         </video>
         <div class="content">
             <h1>World Clock</h1>
-            <select>
+            <select id="select">
                 <option value="">Select a city...</option>
                 <option value="">Quito</option>
                 <option value="">London</option>
                 <option value="">New York</option>
             </select>
 
-            <div class="city">
+            <div class="city" id="LosAngeles">
                 <div>
                     <h2>Los Angeles 🗼</h2>
-                    <div class="date"> August, 15th 2025</div>
+                    <div class="date"></div>
                 </div>
-                <div class="time">1:48:15 <small>AM</small></div>
+                <div class="time"></div>
             </div>
-            <div class="city">
+            <div class="city" id="Sydney">
                 <div>
                     <h2>Sidney 🌆</h2>
-                    <div class="date"> August, 15th 2025</div>
+                    <div class="date"></div>
                 </div>
-                <div class="time">1:48:15 <small>AM</small></div>
+                <div class="time"></div>
             </div>
         </div>
         
