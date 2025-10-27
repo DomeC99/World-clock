@@ -23,6 +23,18 @@ if (SydneyElement) {
     SydneyElement.querySelector(".time").innerHTML = SydneyTime;  
 }
 
+let ParisElement = document.querySelector("#Paris");
+if (ParisElement) {
+    let ParisDate = ParisElement.querySelector(".date");
+    let ParisTime = ParisElement.querySelector(".time");
+    let ParisTimeZone = moment().tz("Europe/Paris");
+
+    ParisTime = ParisTimeZone.format("HH:mm:ss [<small>]A[</small>]");
+    ParisDate = ParisTimeZone.format("MMMM Do, YYYY");
+    ParisElement.querySelector(".date").innerHTML = ParisDate;
+    ParisElement.querySelector(".time").innerHTML = ParisTime;  
+}
+
 }
 
 function updateCity(event) {
